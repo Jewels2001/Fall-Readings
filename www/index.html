@@ -28,13 +28,14 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:; font-src 'self' fonts.gstatic.com;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:; font-src 'self' fonts.gstatic.com fonts.google.com;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/framework7-bundle.min.css">
+        <link rel="stylesheet" href="fonts/Fuzzy_Bubbles/FuzzyBubbles-Regular.ttf">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Fall Readings App</title>
     </head>
@@ -62,7 +63,7 @@
                                 <div class="card card-outline">
                                     <div class="card-header">Songs</div>
                                     <div class="card-content card-content-padding">
-                                        <a class="link" href="/songs/"><img src="/img/songs/pexels-evgeniya-kuzmina-9040100.jpg" alt="Piano with leaves">
+                                        <a class="link" href="/songs/"><img src="./img/songs/pexels-evgeniya-kuzmina-9040100.jpg" alt="Piano with leaves" width=150vh height=120vh>
 
                                         </img></a>
                                     </div>
@@ -72,7 +73,7 @@
                                 <div class="card card-outline">
                                     <div class="card-header">Books</div>
                                     <div class="card-content card-content-padding">
-                                        <a class="link" href="/books/"><img src="/img/books/pexels-evgeniya-kuzmina-9040100.jpg" alt="Book on ground with leaves">
+                                        <a class="link" href="/books/"><img src="./img/books/pexels-rikka-ameboshi-3358707.jpg" alt="Book on ground with leaves" width="150vh" height="120vhs">
                                     
                                             </img></a>
                                     </div>
@@ -103,53 +104,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-content card-content-padding">
-                                This is a basic card.
-                            </div>
-                        </div>
-                        <div class="card card-outline">
-                            <div class="card-header"> Card header</div>
-                            <div class="card-content card-content-padding">
-                                Header card
-                            </div>
-                        </div>
-                        <div class="card demo-card-header-pic">
-                            <div style="background-image:url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg)"
-                                class="card-header align-items-flex-end">Journey To Mountains</div>
-                            <div class="card-content card-content-padding">
-                                <p class="date">Posted on January 21, 2015</p>
-                                <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus
-                                    quis nibh hendrerit...</p>
-                            </div>
-                            <div class="card-footer"><a href="#" class="link">Like</a><a href="#" class="link">Read more</a></div>
-                        </div>
-
                         <!-- scrollable content here -->
+                        <button class="button">Button</button>
                         <div class="list links-list">
                             <ul>
                                 <li><a href="#" class="link">Link 1</a></li>
                                 <li><a href="/page2/" class="link">Page 2!</a></li>
                                 <li><a href="#" class="link">Link :)</a></li>
                             </ul>
-                        </div>
-                        <button class="button">Button</button>
-                        <div class="accordion-list">
-                            <div class="accordion-item">
-                                <div class="accordion-item-toggle">...</div>
-                                <div class="accordion-item-content">...</div>
-                                Hello
-                            </div>
-                            <div class="accordion-item accordion-item-opened">
-                                <div class="accordion-item-toggle">...</div>
-                                <div class="accordion-item-content">...</div>
-                                Section 2
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-item-toggle">...</div>
-                                <div class="accordion-item-content">...</div>
-                                Next 
-                            </div>s
                         </div>
                     </div>
                 </div>
