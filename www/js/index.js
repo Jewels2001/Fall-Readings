@@ -32,6 +32,10 @@ var app = new Framework7({
             url: 'pages/movies.html',
         },
         {
+            path: '/addrec/',
+            url: 'pages/addRec.html',
+        },
+        {
             path: '(.*)',
             url: 'pages/404.html',
         }
