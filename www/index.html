@@ -17,7 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html class="dark">
     <head>
         <meta charset="utf-8">
         <!--
@@ -28,14 +28,15 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:;
+        font-src 'self' fonts.gstatic.com;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/framework7-bundle.min.css">
-        <title>Test App</title>
+        <title>Fall Readings App</title>
     </head>
     <body>
         <!-- app root -->
@@ -47,7 +48,7 @@
                     <div class="navbar">
                         <div class="navbar-bg"></div>
                         <div class="navbar-inner">
-                            <div class="title">New Awesome App</div>
+                            <div class="title">Fall Readings and Media</div>
                             <a class="link" href="/about/">
                                 ABOUT
                             </a>
@@ -55,7 +56,29 @@
                     </div>
 
                     <div class="page-content">
-                        <div class="block-title">~Recommendations~</div> 
+                        <div class="block-title text-align-center">~Recommendations~</div>
+                        <div class="row no-gap">
+                            <div class="col-50 medium-25">
+                                <div class="card card-outline">
+                                    <div class="card-header"> Card header</div>
+                                    <div class="card-content card-content-padding">
+                                        <a class="link" href="/songs/"><img alt="Books">
+
+                                        </img></a>
+                                        This is a basic card.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50 medium-25">
+                                <div class="card card-outline">
+                                    <div class="card-header"> Card header</div>
+                                    <div class="card-content card-content-padding">
+                                        Header card - This is a basic card.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
                         <div class="card">
                             <div class="card-content card-content-padding">
                                 This is a basic card.
