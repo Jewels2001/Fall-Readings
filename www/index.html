@@ -17,7 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html class="dark">
+<html>
     <head>
         <meta charset="utf-8">
         <!--
@@ -28,17 +28,17 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:;
-        font-src 'self' fonts.gstatic.com;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:; font-src 'self' fonts.gstatic.com;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/framework7-bundle.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Fall Readings App</title>
     </head>
-    <body>
+    <body class="dark">
         <!-- app root -->
         <div id="app">
             <!-- main view -->
@@ -60,25 +60,49 @@
                         <div class="row no-gap">
                             <div class="col-50 medium-25">
                                 <div class="card card-outline">
-                                    <div class="card-header"> Card header</div>
+                                    <div class="card-header">Songs</div>
                                     <div class="card-content card-content-padding">
-                                        <a class="link" href="/songs/"><img alt="Books">
+                                        <a class="link" href="/songs/"><img src="/img/songs/pexels-evgeniya-kuzmina-9040100.jpg" alt="Piano with leaves">
 
                                         </img></a>
-                                        This is a basic card.
                                     </div>
                                 </div>
                             </div>
                             <div class="col-50 medium-25">
                                 <div class="card card-outline">
-                                    <div class="card-header"> Card header</div>
+                                    <div class="card-header">Books</div>
                                     <div class="card-content card-content-padding">
-                                        Header card - This is a basic card.
-
+                                        <a class="link" href="/books/"><img src="/img/books/pexels-evgeniya-kuzmina-9040100.jpg" alt="Book on ground with leaves">
+                                    
+                                            </img></a>
                                     </div>
                                 </div>
                             </div>
                         </div> 
+                        <div class="row no-gap">
+                            <div class="col-50 medium-25">
+                                <div class="card card-outline">
+                                    <div class="card-header">Movies</div>
+                                    <div class="card-content card-content-padding">
+                                        <a class="link" href="/movies/"><img src="/img/movies/pexels-evgeniya-kuzmina-9040100.jpg"
+                                                alt="Spooky Jack O'lanterns lit in the night">
+                        
+                                            </img></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50 medium-25">
+                                <div class="card card-outline">
+                                    <div class="card-header">Board Games</div>
+                                    <div class="card-content card-content-padding">
+                                        <a class="link" href="/bgs/"><img src="/img/books/pexels-evgeniya-kuzmina-9040100.jpg"
+                                                alt="Pumpkin/Jack O' Lantern Trick or Treat Baskets in front of house">
+                        
+                                            </img></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card-content card-content-padding">
                                 This is a basic card.
