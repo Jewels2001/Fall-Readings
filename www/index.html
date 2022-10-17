@@ -28,14 +28,14 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:; font-src 'self' fonts.gstatic.com fonts.google.com;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:; font-src 'self' fonts.gstatic.com;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/framework7-bundle.min.css">
-        <link rel="stylesheet" href="fonts/Fuzzy_Bubbles/FuzzyBubbles-Regular.ttf">
+        <!-- <link rel="stylesheet" href="fonts/Fuzzy_Bubbles/FuzzyBubbles-Regular.ttf"> -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Fall Readings App</title>
     </head>
@@ -85,8 +85,7 @@
                                 <div class="card card-outline">
                                     <div class="card-header">Movies</div>
                                     <div class="card-content card-content-padding">
-                                        <a class="link" href="/movies/"><img src="/img/movies/pexels-evgeniya-kuzmina-9040100.jpg"
-                                                alt="Spooky Jack O'lanterns lit in the night">
+                                        <a class="link" href="/movies/"><img src="./img/movies/pexels-toni-cuenca-619420.jpg" alt="Spooky Jack O'lanterns lit in the night" width="150vh" height="120vhs">
                         
                                             </img></a>
                                     </div>
@@ -96,21 +95,19 @@
                                 <div class="card card-outline">
                                     <div class="card-header">Board Games</div>
                                     <div class="card-content card-content-padding">
-                                        <a class="link" href="/bgs/"><img src="/img/books/pexels-evgeniya-kuzmina-9040100.jpg"
-                                                alt="Pumpkin/Jack O' Lantern Trick or Treat Baskets in front of house">
-                        
-                                            </img></a>
+                                        <a class="link" href="/bgs/"><img src="./img/bgs/pexels-charles-parker-5859740.jpg"
+                                                alt="Pumpkin/Jack O' Lantern Trick or Treat Baskets in front of house" width="100vh" height="120vhs"></img></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- scrollable content here -->
-                        <button class="button">Button</button>
+                        <button class="button">Add your own!</button>
                         <div class="list links-list">
                             <ul>
-                                <li><a href="#" class="link">Link 1</a></li>
+                                <li><a href="#" class="link">Home</a></li>
                                 <li><a href="/page2/" class="link">Page 2!</a></li>
-                                <li><a href="#" class="link">Link :)</a></li>
+                                <li><a href="#" class="link">About this project</a></li>
                             </ul>
                         </div>
                     </div>

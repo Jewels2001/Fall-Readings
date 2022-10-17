@@ -11,7 +11,7 @@
 html {
     margin: 0;
     padding: 0;
-    font-family: fuzzyBubbles;
+    font-family: "fuzzyBubbles";
     color: var(--f7-theme-color);
     background-color: #ffffff;
 }
